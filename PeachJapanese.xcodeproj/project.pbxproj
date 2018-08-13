@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC41A53D211C0FEE00CA507A /* YLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC41A53C211C0FEE00CA507A /* YLLoginViewController.m */; };
+		CC41A540211C102400CA507A /* YLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC41A53F211C102400CA507A /* YLHomeViewController.m */; };
 		CCDC8FB02119677E00691EA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDC8FAF2119677E00691EA0 /* AppDelegate.m */; };
 		CCDC8FB32119677E00691EA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDC8FB22119677E00691EA0 /* ViewController.m */; };
 		CCDC8FB62119677E00691EA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDC8FB42119677E00691EA0 /* Main.storyboard */; };
 		CCDC8FB82119678000691EA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDC8FB72119678000691EA0 /* Assets.xcassets */; };
 		CCDC8FBB2119678000691EA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDC8FB92119678000691EA0 /* LaunchScreen.storyboard */; };
 		CCDC8FBE2119678000691EA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDC8FBD2119678000691EA0 /* main.m */; };
+		CCDC8FC5211967E600691EA0 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDC8FC4211967E600691EA0 /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC41A53B211C0FEE00CA507A /* YLLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLLoginViewController.h; sourceTree = "<group>"; };
+		CC41A53C211C0FEE00CA507A /* YLLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLLoginViewController.m; sourceTree = "<group>"; };
+		CC41A53E211C102400CA507A /* YLHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLHomeViewController.h; sourceTree = "<group>"; };
+		CC41A53F211C102400CA507A /* YLHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLHomeViewController.m; sourceTree = "<group>"; };
 		CCDC8FAB2119677E00691EA0 /* PeachJapanese.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeachJapanese.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDC8FAE2119677E00691EA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CCDC8FAF2119677E00691EA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +33,7 @@
 		CCDC8FBA2119678000691EA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCDC8FBC2119678000691EA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCDC8FBD2119678000691EA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCDC8FC4211967E600691EA0 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +66,94 @@
 		CCDC8FAD2119677E00691EA0 /* PeachJapanese */ = {
 			isa = PBXGroup;
 			children = (
+				CCDC8FCE2119693000691EA0 /* Libraries */,
+				CCDC8FC6211968B400691EA0 /* Classes */,
 				CCDC8FAE2119677E00691EA0 /* AppDelegate.h */,
 				CCDC8FAF2119677E00691EA0 /* AppDelegate.m */,
 				CCDC8FB12119677E00691EA0 /* ViewController.h */,
 				CCDC8FB22119677E00691EA0 /* ViewController.m */,
 				CCDC8FB42119677E00691EA0 /* Main.storyboard */,
+				CCDC8FC4211967E600691EA0 /* Login.storyboard */,
 				CCDC8FB72119678000691EA0 /* Assets.xcassets */,
 				CCDC8FB92119678000691EA0 /* LaunchScreen.storyboard */,
 				CCDC8FBC2119678000691EA0 /* Info.plist */,
 				CCDC8FBD2119678000691EA0 /* main.m */,
 			);
 			path = PeachJapanese;
+			sourceTree = "<group>";
+		};
+		CCDC8FC6211968B400691EA0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CCDC8FCD2119692900691EA0 /* Payment */,
+				CCDC8FCC2119692300691EA0 /* Setting */,
+				CCDC8FCB2119691D00691EA0 /* Feedback */,
+				CCDC8FCA211968F500691EA0 /* Exercise */,
+				CCDC8FC9211968D900691EA0 /* Preview */,
+				CCDC8FC8211968D400691EA0 /* Home */,
+				CCDC8FC7211968C300691EA0 /* Login */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CCDC8FC7211968C300691EA0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CC41A53B211C0FEE00CA507A /* YLLoginViewController.h */,
+				CC41A53C211C0FEE00CA507A /* YLLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CCDC8FC8211968D400691EA0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CC41A53E211C102400CA507A /* YLHomeViewController.h */,
+				CC41A53F211C102400CA507A /* YLHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CCDC8FC9211968D900691EA0 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		CCDC8FCA211968F500691EA0 /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
+		CCDC8FCB2119691D00691EA0 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		CCDC8FCC2119692300691EA0 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		CCDC8FCD2119692900691EA0 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		CCDC8FCE2119693000691EA0 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCDC8FC5211967E600691EA0 /* Login.storyboard in Resources */,
 				CCDC8FBB2119678000691EA0 /* LaunchScreen.storyboard in Resources */,
 				CCDC8FB82119678000691EA0 /* Assets.xcassets in Resources */,
 				CCDC8FB62119677E00691EA0 /* Main.storyboard in Resources */,
@@ -141,9 +227,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC41A540211C102400CA507A /* YLHomeViewController.m in Sources */,
 				CCDC8FB32119677E00691EA0 /* ViewController.m in Sources */,
 				CCDC8FBE2119678000691EA0 /* main.m in Sources */,
 				CCDC8FB02119677E00691EA0 /* AppDelegate.m in Sources */,
+				CC41A53D211C0FEE00CA507A /* YLLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
